@@ -1,0 +1,307 @@
+% Acta N°7 - Consejo de Carrera CEIC - Jueves 6 de agosto de 2026
+% Acta reconstruida (el acta original de la sesión se extravió).
+%
+% Compilación:
+%   Versión final:     pdflatex Acta_CEIC_Jueves_6_de_Agosto.tex   (dos veces)
+%   Versión revisión:  pdflatex -jobname=Acta_CEIC_Jueves_6_de_Agosto_REVISION "\def\revision{}\input{Acta_CEIC_Jueves_6_de_Agosto.tex}"
+%
+% En la versión de revisión, todo lo marcado con \dato{...} aparece en color:
+% son datos que deben verificarse o completarse antes de publicar el acta.
+
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-nolists,es-nodecimaldot]{babel}
+\usepackage[letterpaper,left=1in,right=1in,top=1.35in,bottom=1.1in,headheight=48pt,headsep=24pt,footskip=36pt]{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{textcomp}
+
+% ---------------------------------------------------------------------------
+% Datos a verificar
+% ---------------------------------------------------------------------------
+\newif\ifrevision
+\ifdefined\revision \revisiontrue \else \revisionfalse \fi
+\newcommand{\dato}[1]{\ifrevision\textcolor[HTML]{C0392B}{#1}\else#1\fi}
+
+% ---------------------------------------------------------------------------
+% Datos del acta
+% ---------------------------------------------------------------------------
+\newcommand{\numeroacta}{7}
+\newcommand{\fechaacta}{06-08-2026}
+
+% ---------------------------------------------------------------------------
+% Formato
+% ---------------------------------------------------------------------------
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{6pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\raisebox{-0.35\height}{\includegraphics[height=1.15cm]{logo_ceic.png}}}
+\fancyhead[R]{Acta N\textdegree\numeroacta\\\fechaacta}
+\fancyfoot[C]{Página \thepage\ de \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection.}{0.35em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection.}{0.35em}{}
+\titlespacing*{\section}{0pt}{3.0ex plus 1ex minus .2ex}{1.6ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{2.4ex plus 1ex minus .2ex}{1.2ex plus .2ex}
+
+\renewcommand{\labelitemi}{\tiny$\blacksquare$}
+\setlist[itemize]{leftmargin=2.2em,itemsep=2pt}
+\setlist[enumerate]{leftmargin=2.2em,itemsep=2pt}
+
+\begin{document}
+
+% ---------------------------------------------------------------------------
+% Encabezado
+% ---------------------------------------------------------------------------
+\begin{center}
+  {\Large\bfseries Centro de Estudiantes de Ingeniería Comercial}\\
+  Universidad de Chile, Facultad de Economía y Negocios
+
+  \vspace{1.2em}
+  \textbf{Acta Consejo}
+\end{center}
+
+\vspace{0.8em}
+
+\textbf{Asistentes:} \dato{Alan Mc Coll (Mesa), Diego Pakomio (Mesa extendida), Anabelee Araneda (DM), Antonio Muñoz (DM), Arturo Mora (DM), Martín Farías (DPC), Juan José Esbeile (DA), Diego Hernández (DA), Benjamín Gonzáles (DA), Sofía Cisternas (DA), Juan José Tank (DE), Nicolás Sanzana (DE), Nicolás Mella (DE), Benjamín Caro (CE).}
+
+\textbf{Hora de inicio:} 14:00 hrs
+
+\textbf{Hora de término:} \dato{15:30} hrs
+
+\vspace{1em}
+
+\textbf{Tabla:}
+
+\begin{enumerate}[itemsep=6pt]
+  \item Reforma estatutaria
+  \item Finanzas transparentes
+  \item Renuncias
+  \item Elecciones CEIC
+  \item Carta a la Secretaría de Estudios
+  \item Recuento de actividades
+  \item Convenios
+  \item Otros
+\end{enumerate}
+
+% ---------------------------------------------------------------------------
+\section{Reforma estatutaria}
+
+\subsection{Antecedentes}
+
+En continuidad con lo discutido en la sesión del 19 de mayo de 2026, la Mesa presenta ante el Consejo el borrador de reforma estatutaria elaborado durante el receso de invierno. La propuesta busca subsanar los vacíos normativos detectados durante el semestre de Otoño, particularmente aquellos relativos a la facultad de voto de las consejerías y a la gestión de las renuncias al interior del CEIC.
+
+\subsection{Contenido de la propuesta}
+
+Se exponen ante el Consejo los principales ejes de la reforma:
+
+\begin{itemize}
+  \item \textbf{Artículo 12 (voto de las consejerías):} Se propone explicitar los casos en que las consejerías temáticas podrán emitir su voto en las votaciones de movilización o paralización, de modo que su participación no quede restringida únicamente a materias de índole académica cuando la convocatoria involucre temáticas propias de su cartera.
+  \item \textbf{Artículo 13 (votaciones en conjunto con la Escuela):} Se propone precisar el criterio mediante el cual el CEIC determina la participación de las consejerías en estas votaciones, estableciendo que dicha calificación deberá quedar consignada en la convocatoria de la sesión respectiva.
+  \item \textbf{Asamblea Feminista:} Se incorpora una disposición que habilita a la Consejería de Género y Disidencias para emitir su voto en las instancias de la Asamblea Feminista, superando la limitación que establecen los estatutos vigentes.
+  \item \textbf{Protocolo de renuncias y reemplazos:} Se incorpora el protocolo discutido en la sesión de mayo, según el cual todo reemplazo de un integrante de la Mesa Directiva por una persona que no haya sido electa junto con la lista ganadora deberá ser ratificado mediante votación del Consejo de Carrera.
+\end{itemize}
+
+\subsection{Discusión}
+
+Las delegaturas valoran que la propuesta recoja las observaciones planteadas durante el semestre anterior. Se consulta respecto del quórum que regirá la ratificación de reemplazos, ante lo cual la Mesa señala que se propone utilizar la mayoría simple de las delegaturas presentes, siempre que la sesión cuente con el quórum de funcionamiento que establecen los estatutos.
+
+Asimismo, se plantea la necesidad de que el estudiantado conozca el contenido de la reforma antes de su aprobación definitiva, y de que esta siga el procedimiento de modificación establecido en los propios estatutos.
+
+\subsection{Acuerdos y próximos pasos}
+
+\begin{enumerate}
+  \item \textbf{Período de observaciones:} Se remitirá el borrador a todas las delegaturas y consejerías, las cuales contarán con un plazo de dos semanas para hacer llegar sus observaciones por escrito.
+  \item \textbf{Versión final:} La Mesa incorporará las observaciones recibidas y presentará la versión definitiva de la propuesta en la próxima sesión ordinaria.
+  \item \textbf{Ratificación:} Se evaluará la posibilidad de someter la reforma a su ratificación en conjunto con el proceso eleccionario del CEIC, con el fin de facilitar la participación del estudiantado.
+\end{enumerate}
+
+\subsection{Resolución}
+
+El Consejo aprueba en general la propuesta de reforma estatutaria y acuerda continuar su tramitación conforme a los plazos señalados.
+
+% ---------------------------------------------------------------------------
+\section{Finanzas transparentes}
+
+Se presenta el balance correspondiente a los meses de Junio y Julio, periodo que comprende el cierre del semestre de Otoño y el receso de invierno.
+
+\begin{itemize}
+  \item \textbf{Saldo del mes de Junio (Ingresos $-$ Gastos):} \dato{\$[monto]}
+  \item \textbf{Saldo del mes de Julio (Ingresos $-$ Gastos):} \dato{\$[monto]}
+\end{itemize}
+
+Lo que arroja un saldo actual de caja chica de: \dato{\$[monto]}
+
+\textbf{Nota:} Durante el receso de invierno el volumen de transacciones fue considerablemente menor, dada la ausencia de actividades masivas en la facultad. Se recuerda que cualquier estudiante puede solicitar el detalle de los balances presentados a través del formulario del Portal de Transparencia del CEIC.
+
+% ---------------------------------------------------------------------------
+\section{Renuncias}
+
+\subsection{Renuncias recibidas}
+
+Se hace constar formalmente ante el Consejo la renuncia presentada por \dato{[Nombre y Apellido]} a su cargo de \dato{[cargo / secretaría]}, la cual fue recibida por la Mesa Directiva durante el receso de invierno. La Mesa agradece el trabajo realizado durante el periodo e informa que, mientras se resuelve el reemplazo, las funciones de dicha cartera han sido asumidas de manera provisoria por la Mesa.
+
+\subsection{Reemplazo y ratificación}
+
+Se informa que la persona propuesta para asumir el cargo es \dato{[Nombre y Apellido]}. Si bien el protocolo de ratificación de reemplazos aún no se encuentra incorporado formalmente en los estatutos, la Mesa decide someter la designación a consideración del Consejo, en concordancia con lo acordado en la sesión del 19 de mayo de 2026 y con la propuesta de reforma expuesta en el punto 1 de la presente acta.
+
+Tras la presentación de la persona propuesta y de sus lineamientos de trabajo para el semestre de Primavera, el Consejo ratifica su designación.
+
+\subsection{Renuncias en las delegaturas}
+
+Se recuerda a las delegaturas que, en caso de renuncia de alguno de sus integrantes, esta deberá ser comunicada por escrito a la Mesa, con el fin de actualizar la nómina del Consejo y el registro de asistencia y votaciones.
+
+% ---------------------------------------------------------------------------
+\section{Elecciones CEIC}
+
+\subsection{Antecedentes}
+
+La Mesa informa que durante el semestre de Primavera corresponde llevar a cabo el proceso eleccionario para la renovación de la Mesa Directiva del CEIC, conforme a los plazos que establecen los estatutos.
+
+\subsection{Conformación del Tricel}
+
+Se recuerda que el Tribunal Calificador de Elecciones (Tricel) es un órgano independiente del CEIC, encargado de dirigir y fiscalizar el proceso eleccionario. En consecuencia, se acuerda abrir una convocatoria dirigida a estudiantes interesados en integrarlo, quienes no podrán formar parte de ninguna de las listas que se presenten. Se solicita a las delegaturas difundir esta convocatoria en sus respectivas generaciones.
+
+\subsection{Calendario tentativo}
+
+Se presenta una propuesta preliminar de calendario, la cual queda sujeta a la validación del Tricel una vez constituido:
+
+\begin{itemize}
+  \item \textbf{Constitución del Tricel:} \dato{durante el mes de Agosto.}
+  \item \textbf{Inscripción de listas:} \dato{primera quincena de Octubre.}
+  \item \textbf{Campaña y debate de listas:} \dato{segunda quincena de Octubre.}
+  \item \textbf{Votación:} \dato{primera semana de Noviembre.}
+\end{itemize}
+
+\subsection{Discusión}
+
+Las delegaturas plantean la importancia de incentivar la participación del estudiantado en el proceso. Se propone realizar un debate presencial en la facultad y difundir los programas de las listas a través de los canales oficiales del CEIC. Asimismo, se sugiere evaluar junto al Tricel la utilización de una plataforma de votación electrónica, tal como se realizó en el proceso de Presupuesto Participativo.
+
+\subsection{Resolución}
+
+El Consejo toma conocimiento del inicio del proceso eleccionario y acuerda difundir la convocatoria para conformar el Tricel durante las próximas dos semanas.
+
+% ---------------------------------------------------------------------------
+\section{Carta a la Secretaría de Estudios}
+
+\subsection{Antecedentes}
+
+En cumplimiento de lo acordado en la sesión del 23 de junio de 2026, se presenta ante el Consejo el borrador de la carta dirigida a la Secretaría de Estudios, en la cual se exponen las principales observaciones y dificultades asociadas al sistema vigente de calendarización de evaluaciones y al proceso de toma de ramos.
+
+\subsection{Contenido de la carta}
+
+El documento se estructura en torno a los siguientes ejes:
+
+\begin{itemize}
+  \item \textbf{Entrega oportuna de información:} Se solicita que el calendario de exámenes sea publicado con la debida anticipación, evitando las postergaciones sucesivas registradas al término del semestre de Otoño.
+  \item \textbf{Transparencia del proceso:} Se solicita conocer los criterios utilizados por el sistema automatizado para la asignación de las fechas de solemnes y exámenes.
+  \item \textbf{Participación estudiantil:} Se propone que el CEIC y el Consejo de Estudiantes cuenten con una instancia formal de revisión del calendario antes de su publicación definitiva, de modo de incorporar la experiencia de las delegaturas y detectar oportunamente topes o semanas de alta carga académica.
+  \item \textbf{Toma de ramos:} Se deja constancia de los inconvenientes operativos que obligaron a postergar el inicio del proceso y se solicita una comunicación más fluida con el CEIC ante eventuales contingencias.
+\end{itemize}
+
+\subsection{Discusión}
+
+Las delegaturas manifiestan su conformidad con el contenido general del documento. Se sugiere incorporar ejemplos concretos de las situaciones experimentadas por cada generación, así como los antecedentes recopilados por las delegaturas durante el semestre.
+
+Asimismo, se acuerda que la carta mantenga un tono propositivo, reconociendo los avances del sistema actual en materia de orden y previsibilidad, entre ellos la ausencia de topes de horario en las evaluaciones del primer semestre.
+
+\subsection{Acuerdos y próximos pasos}
+
+\begin{enumerate}
+  \item Incorporar las observaciones de las delegaturas al borrador durante la presente semana.
+  \item Enviar la carta a la Secretaría de Estudios con la firma de la Mesa Directiva y de las delegaturas que adhieran a su contenido.
+  \item Informar al Consejo la respuesta recibida en la próxima sesión ordinaria.
+\end{enumerate}
+
+% ---------------------------------------------------------------------------
+\section{Recuento de actividades}
+
+Se presenta ante el Consejo un recuento de las actividades realizadas desde la última sesión ordinaria y de aquellas proyectadas para el inicio del semestre de Primavera.
+
+\subsection{Actividades realizadas}
+
+\begin{itemize}
+  \item \textbf{Cierre del Mes del Orgullo:} \dato{Se informa la realización de la actividad ``Contramarcha'', cuya preparación fue reportada en la sesión anterior, con la cual concluyó la programación del Mes del Orgullo.}
+  \item \textbf{Presupuesto Participativo:} Se informa que concluyó el proceso de votación realizado a través de Docencia Web, cuyo resultado tiene carácter vinculante. Los proyectos adjudicados se encuentran en etapa de coordinación con la Escuela para su ejecución durante el semestre de Primavera.
+  \item \textbf{Cuenta pública de las delegaturas:} Se informa el estado de avance de la publicación conjunta acordada en la sesión anterior. Se solicita a las delegaturas que aún no han enviado su resumen del semestre de Otoño hacerlo llegar a la brevedad, con el fin de difundir la publicación durante el mes de Agosto.
+  \item \textbf{Repositorio de ramos:} Se insta a los delegados a actualizar el material de la Nube Académica con las evaluaciones del semestre de Otoño.
+\end{itemize}
+
+\subsection{Actividades proyectadas}
+
+\begin{itemize}
+  \item \textbf{Inicio del semestre de Primavera:} Se proyectan actividades de integración durante las primeras semanas del semestre, orientadas a fortalecer el vínculo entre las distintas generaciones.
+  \item \textbf{Fiestas Patrias:} Se da inicio a la planificación de las actividades de Fiestas Patrias en coordinación con los demás centros de estudiantes de la FEN. Al respecto, se reitera la aplicación de la política de control de vidrio y el aumento de la dotación de observadores activos acordados en la sesión del 19 de mayo de 2026.
+  \item \textbf{Noviembre:} Se recuerda la planificación de la conmemoración del Día Internacional de la Eliminación de la Violencia contra la Mujer, en coordinación con las consejerías temáticas.
+\end{itemize}
+
+\subsection{Resolución}
+
+El Consejo toma conocimiento del recuento y se compromete a apoyar la difusión y ejecución de las actividades del semestre de Primavera, reforzando la convocatoria de voluntarios para su realización.
+
+% ---------------------------------------------------------------------------
+\section{Convenios}
+
+\subsection{Antecedentes}
+
+La Mesa presenta el estado de los convenios que el CEIC mantiene y gestiona con empresas y servicios externos, cuyo objetivo es otorgar beneficios y descuentos directos al estudiantado de Ingeniería Comercial.
+
+\subsection{Convenios en gestión}
+
+Se informa que para el semestre de Primavera se encuentran en conversaciones convenios en las siguientes áreas:
+
+\begin{itemize}
+  \item \textbf{Alimentación:} Locales cercanos a la facultad, considerando la limitada oferta de alimentación señalada en sesiones anteriores.
+  \item \textbf{Deporte y bienestar:} Gimnasios y centros deportivos.
+  \item \textbf{Formación complementaria:} Centros de idiomas y cursos de herramientas útiles para la formación profesional.
+\end{itemize}
+
+\subsection{Criterios para la suscripción de convenios}
+
+Se discute la necesidad de establecer criterios comunes para la suscripción de convenios. Se acuerda que estos deberán:
+
+\begin{enumerate}
+  \item Significar un beneficio concreto y verificable para el estudiantado.
+  \item No comprometer recursos del CEIC sin conocimiento del Consejo.
+  \item Ser informados públicamente, incluyendo sus condiciones y vigencia.
+\end{enumerate}
+
+Las delegaturas proponen consultar a sus generaciones sobre los rubros de mayor interés, con el fin de orientar las gestiones de la Mesa.
+
+\subsection{Resolución}
+
+Se acuerda publicar un catálogo de los convenios vigentes en los canales oficiales del CEIC y presentar en la próxima sesión aquellos que se concreten.
+
+% ---------------------------------------------------------------------------
+\section{Otros}
+
+\begin{itemize}
+  \item \textbf{Casilleros semestre de Primavera:} Se informa la apertura del proceso de arriendo de casilleros para el semestre de Primavera, el cual se regirá por las cláusulas de caducidad por falta de retiro y la política de reembolsos aprobadas en la sesión del 17 de marzo de 2026.
+  \item \textbf{Conectividad FEN:} Las delegaturas consultan por el estado de los problemas de conectividad reportados durante el semestre anterior. La Mesa se compromete a solicitar a la Escuela un informe actualizado sobre las mejoras implementadas durante el receso.
+\end{itemize}
+
+\vspace{0.5em}
+
+Sin más puntos que tratar, se da por finalizada la sesión.
+
+\vspace{4em}
+
+\noindent\textbf{Firma:}
+
+\vspace{3em}
+
+\noindent Alan Evan Mc Coll Albuja\\
+Presidente CEIC
+
+\end{document}
