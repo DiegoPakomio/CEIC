@@ -1,0 +1,191 @@
+% Acta N°8 - Consejo de Carrera CEIC - Jueves 8 de octubre de 2026
+% Redactada a partir de los apuntes tomados en sesión (incompletos); lo marcado con \dato{...} debe verificarse o completarse.
+%
+% Compilación:
+%   Versión final:     pdflatex Acta_CEIC_Jueves_8_de_Octubre.tex   (dos veces)
+%   Versión revisión:  pdflatex -jobname=Acta_CEIC_Jueves_8_de_Octubre_REVISION "\def\revision{}\input{Acta_CEIC_Jueves_8_de_Octubre.tex}"
+%
+% En la versión de revisión, todo lo marcado con \dato{...} aparece en color:
+% son datos que deben verificarse o completarse antes de publicar el acta.
+
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-nolists,es-nodecimaldot]{babel}
+\usepackage[letterpaper,left=1in,right=1in,top=1.35in,bottom=1.1in,headheight=48pt,headsep=24pt,footskip=36pt]{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{textcomp}
+
+% ---------------------------------------------------------------------------
+% Datos a verificar
+% ---------------------------------------------------------------------------
+\newif\ifrevision
+\ifdefined\revision \revisiontrue \else \revisionfalse \fi
+\newcommand{\dato}[1]{\ifrevision\textcolor[HTML]{C0392B}{#1}\else#1\fi}
+
+% ---------------------------------------------------------------------------
+% Datos del acta
+% ---------------------------------------------------------------------------
+\newcommand{\numeroacta}{8}
+\newcommand{\fechaacta}{08-10-2026}
+
+% ---------------------------------------------------------------------------
+% Formato
+% ---------------------------------------------------------------------------
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{6pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\raisebox{-0.35\height}{\includegraphics[height=1.15cm]{logo_ceic.png}}}
+\fancyhead[R]{Acta N\textdegree\numeroacta\\\fechaacta}
+\fancyfoot[C]{Página \thepage\ de \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection.}{0.35em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection.}{0.35em}{}
+\titlespacing*{\section}{0pt}{3.0ex plus 1ex minus .2ex}{1.6ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{2.4ex plus 1ex minus .2ex}{1.2ex plus .2ex}
+
+\renewcommand{\labelitemi}{\tiny$\blacksquare$}
+\setlist[itemize]{leftmargin=2.2em,itemsep=2pt}
+\setlist[enumerate]{leftmargin=2.2em,itemsep=2pt}
+
+\begin{document}
+
+
+% ---------------------------------------------------------------------------
+% Encabezado
+% ---------------------------------------------------------------------------
+\begin{center}
+  {\Large\bfseries Centro de Estudiantes de Ingeniería Comercial}\\
+  Universidad de Chile, Facultad de Economía y Negocios
+
+  \vspace{1.2em}
+  \textbf{Acta Consejo}
+\end{center}
+
+\vspace{0.8em}
+
+% La asistencia se prellenó con la nómina del acta N°6 (23-06-2026): confirmar.
+\textbf{Asistentes:} \dato{Alan Mc Coll (Mesa), Diego Pakomio (Mesa extendida), Antonio Muñoz (DM), Arturo Mora (DM), Juan Budge (DM), Martín Gómez (DPC), Florencia Montiglio (DPC), Martín Farías (DPC), Diego Hernández (DA), Benjamín Gonzáles (DA), Sofía Cisternas (DA), Juan José Tank (DE), Nicolás Sanzana (DE), Nicolás Mella (DE), Noni (CT), Sofía Allende (CT), Benjamín Caro (CE), Vicente Burgos (CE).}
+
+\textbf{Hora de inicio:} 14:00 hrs
+
+\textbf{Hora de término:} \dato{[hora]} hrs
+
+\vspace{1em}
+
+\textbf{Tabla:}
+
+\begin{enumerate}[itemsep=6pt]
+  \item Finanzas transparentes
+  \item Solemnes
+  \item Jaranazos
+  \item Semana organizaciones
+  \item JOE
+  \item Reforma estatutos
+  \item Varios
+  \item Otros
+\end{enumerate}
+
+% ---------------------------------------------------------------------------
+\section{Finanzas transparentes}
+
+Se presenta el balance correspondiente a \dato{[mes(es)]}.
+
+\begin{itemize}
+  \item \textbf{Saldo del mes (Ingresos $-$ Gastos):} \dato{\$[monto]}
+\end{itemize}
+
+Lo que arroja un saldo actual de caja chica de: \dato{\$[monto]}
+
+% ---------------------------------------------------------------------------
+\section{Solemnes}
+
+\subsection{Distribución de las fechas}
+
+Sofía \dato{(Cisternas, DA)} destaca que las solemnes quedaron injustamente distribuidas: la mención Administración quedó con una peor distribución que la mención Economía. \dato{Mechones y Plan Común no manifiestan quejas respecto de la distribución de las solemnes.}
+
+Alan señala que las solemnes se revisaron con un representante por mención y generación, quienes analizaron la distribución de las fechas. Indica que la disponibilidad de salas y la reubicación de estudiantes son el principal problema al momento de configurar dicha distribución.
+
+Alan agrega que la configuración actual fue diseñada por el Secretario de Asuntos Académicos, quien logró una configuración ajustada según el peso de la participación de cada ramo.
+
+\subsection{Propuestas}
+
+\begin{itemize}
+  \item Sofía propone que, en la configuración de las fechas, participe además un delegado de la mención.
+  \item Florencia \dato{(Montiglio, DPC)} propone alargar el tiempo de duración de los días de solemnes.
+\end{itemize}
+
+\subsection{Descoordinación entre evaluaciones, clases y ayudantías}
+
+En TSI se produjo una diferencia sustancial de dificultad entre semestres. Se constata además una descoordinación constante entre ayudantías, clases y solemnes, situación que se presenta en Finanzas I, TSI y Negocios II.
+
+También se plantea que Tópicos va atrasado una semana respecto del ramo de Métodos Matemáticos.
+
+\subsection{Prerrequisito de TSI para Cuantitativo I}
+
+Se expone que hay estudiantes a quienes no se les asignó cupo en TSI, ramo que es prerrequisito para Cuantitativo I, y que este último abre de todos modos. Se consideran dos opciones:
+
+\begin{enumerate}
+  \item Quitar el prerrequisito de TSI a Cuantitativo I.
+  \item Realizar un ``perdonazo'' a quienes reprobaron TSI y a quienes no tuvieron la oportunidad de tomar el ramo por falta de cupos.
+\end{enumerate}
+
+\dato{[Indicar si se adoptó algún acuerdo o si el punto queda pendiente.]}
+
+% ---------------------------------------------------------------------------
+\section{Jaranazos}
+
+Se conversa sobre el Jaranazo de Agosto y los problemas asociados a este. La Escuela quería prohibir la fonda, debido a los problemas causados por el Jaranazo de Agosto y a la mala imagen que esta transmite de la institución. Frente a ello, los centros de estudiantes respondieron con una queja formal.
+
+Finalmente se llegó al acuerdo de controlar el ingreso por medio de EARLY y de limitar el consumo a un máximo de dos cervezas por persona.
+
+% ---------------------------------------------------------------------------
+\section{Semana organizaciones}
+
+Se informa que actualmente se está realizando la feria de organizaciones estudiantiles.
+
+% ---------------------------------------------------------------------------
+\section{JOE}
+
+Se informa que la FEN ganó los JOE.
+
+% ---------------------------------------------------------------------------
+\section{Reforma estatutos}
+
+\dato{[Sin registro de lo tratado en este punto; completar.]}
+
+% ---------------------------------------------------------------------------
+\section{Varios}
+
+\dato{[Sin registro; completar o eliminar la sección.]}
+
+% ---------------------------------------------------------------------------
+\section{Otros}
+
+\dato{[Sin registro; completar o eliminar la sección.]}
+
+\vspace{0.5em}
+
+Sin más puntos que tratar, se da por finalizada la sesión.
+
+\vspace{4em}
+
+\noindent\textbf{Firma:}
+
+\vspace{3em}
+
+\noindent Alan Evan Mc Coll Albuja\\
+Presidente CEIC
+
+\end{document}
