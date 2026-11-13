@@ -1,0 +1,244 @@
+% Acta de votación telemática - Consejo CEIC
+% Movilización y paralización convocada por la FECh para el 18 de noviembre de 2026.
+%
+% Compilación:
+%   Versión final:     pdflatex Acta_CEIC_Votacion_Movilizacion_18_de_Noviembre.tex   (dos veces)
+%   Versión revisión:  pdflatex -jobname=Acta_CEIC_Votacion_Movilizacion_18_de_Noviembre_REVISION "\def\revision{}\input{Acta_CEIC_Votacion_Movilizacion_18_de_Noviembre.tex}"
+%
+% En la versión de revisión, todo lo marcado con \dato{...} aparece en color:
+% son datos que deben verificarse o completarse antes de publicar el acta.
+
+\documentclass[12pt,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-nolists,es-nodecimaldot]{babel}
+\usepackage[letterpaper,left=1in,right=1in,top=1.35in,bottom=1.1in,headheight=48pt,headsep=24pt,footskip=36pt]{geometry}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{textcomp}
+\usepackage{array}
+\usepackage{booktabs}
+
+% ---------------------------------------------------------------------------
+% Datos a verificar
+% ---------------------------------------------------------------------------
+\newif\ifrevision
+\ifdefined\revision \revisiontrue \else \revisionfalse \fi
+\newcommand{\dato}[1]{\ifrevision\textcolor[HTML]{C0392B}{#1}\else#1\fi}
+
+% ---------------------------------------------------------------------------
+% Datos del acta
+% ---------------------------------------------------------------------------
+\newcommand{\numeroacta}{\dato{[N°]}}
+\newcommand{\fechaacta}{\dato{[dd-mm-2026]}}
+
+% ---------------------------------------------------------------------------
+% Formato
+% ---------------------------------------------------------------------------
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{6pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\raisebox{-0.35\height}{\includegraphics[height=1.15cm]{logo_ceic.png}}}
+\fancyhead[R]{Acta N\textdegree\numeroacta\\\fechaacta}
+\fancyfoot[C]{Página \thepage\ de \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection.}{0.35em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection.}{0.35em}{}
+\titlespacing*{\section}{0pt}{3.0ex plus 1ex minus .2ex}{1.6ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{2.4ex plus 1ex minus .2ex}{1.2ex plus .2ex}
+
+\renewcommand{\labelitemi}{\tiny$\blacksquare$}
+\setlist[itemize]{leftmargin=2.2em,itemsep=2pt}
+\setlist[enumerate]{leftmargin=2.2em,itemsep=2pt}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\begin{document}
+
+% ---------------------------------------------------------------------------
+% Encabezado
+% ---------------------------------------------------------------------------
+\begin{center}
+  {\Large\bfseries Centro de Estudiantes de Ingeniería Comercial}\\
+  Universidad de Chile, Facultad de Economía y Negocios
+
+  \vspace{1.2em}
+  \textbf{Acta de Votación Telemática del Consejo}
+\end{center}
+
+\vspace{0.8em}
+
+\textbf{Materia:} Movilización y paralización de actividades académicas convocada por la FECh para el 18 de noviembre de 2026.
+
+\textbf{Modalidad:} Votación telemática mediante formulario de Google Forms.
+
+\textbf{Apertura de la votación:} \dato{[fecha y hora]}
+
+\textbf{Cierre de la votación:} \dato{[fecha y hora]}
+
+\vspace{1em}
+
+\textbf{Tabla:}
+
+\begin{enumerate}[itemsep=6pt]
+  \item Antecedentes
+  \item Modalidad de votación
+  \item Mociones sometidas a votación
+  \item Resultados
+  \item Resolución
+\end{enumerate}
+
+% ---------------------------------------------------------------------------
+\section{Antecedentes}
+
+En el Pleno de la Federación de Estudiantes de la Universidad de Chile (FECh), celebrado el \dato{[fecha del pleno]}, se aprobó una moción de movilización y paralización de actividades académicas para el día 18 de noviembre de 2026.
+
+En cumplimiento del compromiso asumido por la Mesa Directiva de presentar ante el Consejo este tipo de mociones, se convocó a una votación telemática con el fin de conocer la postura del Consejo respecto de la convocatoria.
+
+Se deja constancia de que el 18 de noviembre coincide con el inicio del período de exámenes de la Universidad, por lo que no corresponde a una jornada de clases regulares, sino al comienzo del período destinado a la rendición de evaluaciones. Sin perjuicio de ello, se consideró pertinente someter la moción a votación del Consejo.
+
+% ---------------------------------------------------------------------------
+\section{Modalidad de votación}
+
+La votación se realizó de forma telemática, mediante un formulario de Google Forms distribuido a los integrantes del Consejo. En cada moción, los participantes debían seleccionar una única alternativa: \emph{A favor}, \emph{En contra} o \emph{Abstención}.
+
+De acuerdo con los estatutos, esta votación corresponde a un voto completo del Consejo. En consecuencia, solo se contabilizaron los votos de las delegaturas, de la Mesa Directiva y de las consejerías de escuela. Las consejerías temáticas (Género, Diversidad Sexual y Medio Ambiente) no tienen ponderación en este tipo de votación.
+
+El resultado de cada estamento se calcula sobre los votos emitidos por sus integrantes y se pondera de la siguiente forma:
+
+\begin{itemize}
+  \item \textbf{Delegatura Mechona:} 20\%
+  \item \textbf{Delegatura Plan Común:} 20\%
+  \item \textbf{Delegatura Mención Economía:} 20\%
+  \item \textbf{Delegatura Mención Administración:} 20\%
+  \item \textbf{Mesa Directiva:} 10\%
+  \item \textbf{Consejerías de Escuela:} 10\%
+\end{itemize}
+
+% ---------------------------------------------------------------------------
+\section{Mociones sometidas a votación}
+
+Se sometieron a votación dos mociones independientes, cuyos resultados se registran por separado:
+
+\begin{enumerate}
+  \item \textbf{Moción 1:} Aprobar la adhesión a la movilización convocada por la FECh para el día 18 de noviembre.
+
+  Esta moción tuvo por objeto determinar si el Consejo respaldaba la adhesión a la movilización convocada por la Federación.
+
+  \item \textbf{Moción 2:} Aprobar la paralización de actividades académicas para el día 18 de noviembre, en el marco de la movilización convocada por la FECh.
+
+  Esta moción tuvo por objeto determinar si el Consejo respaldaba específicamente la paralización de actividades académicas durante dicha jornada.
+\end{enumerate}
+
+% ---------------------------------------------------------------------------
+\section{Resultados}
+
+\subsection{Registro de votos}
+
+Se registraron los siguientes votos. Los integrantes que no figuran en la tabla no registraron voto en el formulario.
+
+\begin{center}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{L{4.3cm} L{6.2cm} C{2.2cm} C{2.2cm}}
+  \toprule
+  \textbf{Nombre} & \textbf{Estamento} & \textbf{Moción 1} & \textbf{Moción 2} \\
+  \midrule
+  Anabelee Araneda      & Delegatura Mechona                & A favor   & A favor   \\
+  Antonio Muñoz         & Delegatura Mechona                & A favor   & A favor   \\
+  Arturo Mora           & Delegatura Mechona                & En contra & En contra \\
+  Juan Budge            & Delegatura Mechona                & En contra & En contra \\
+  \midrule
+  Martín Farías         & Delegatura Plan Común             & En contra & En contra \\
+  \midrule
+  Diego Peñailillo      & Delegatura Mención Economía       & A favor   & A favor   \\
+  Nicolás Sanzana       & Delegatura Mención Economía       & A favor   & A favor   \\
+  \midrule
+  Sofía Cisternas       & Delegatura Mención Administración & En contra & En contra \\
+  Juan José Esbeile     & Delegatura Mención Administración & En contra & En contra \\
+  Diego Hernández       & Delegatura Mención Administración & A favor   & En contra \\
+  Benjamín Gonzáles     & Delegatura Mención Administración & En contra & En contra \\
+  \midrule
+  Alan Mc Coll          & Mesa Directiva                    & En contra & En contra \\
+  \midrule
+  Benjamín Caro         & Consejerías de Escuela            & En contra & En contra \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+No registraron voto: Florencia Montiglio y José Toledo (Delegatura Plan Común); Juan José Tank y Nicolás Mella (Delegatura Mención Economía); Vicente Burgos (Consejerías de Escuela).
+
+\subsection{Moción 1: Adhesión a la movilización convocada por la FECh}
+
+\begin{center}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{L{6.3cm} C{2.4cm} C{1.8cm} C{1.9cm} C{2.2cm}}
+  \toprule
+  \textbf{Estamento} & \textbf{Ponderación} & \textbf{A favor} & \textbf{En contra} & \textbf{Abstención} \\
+  \midrule
+  Delegatura Mechona                & 20\% & 50\%  & 50\%  & 0\% \\
+  Delegatura Plan Común             & 20\% & 0\%   & 100\% & 0\% \\
+  Delegatura Mención Economía       & 20\% & 100\% & 0\%   & 0\% \\
+  Delegatura Mención Administración & 20\% & 25\%  & 75\%  & 0\% \\
+  Mesa Directiva                    & 10\% & 0\%   & 100\% & 0\% \\
+  Consejerías de Escuela            & 10\% & 0\%   & 100\% & 0\% \\
+  \midrule
+  \textbf{Resultado ponderado}      & \textbf{100\%} & \textbf{35\%} & \textbf{65\%} & \textbf{0\%} \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Moción 2: Paralización de actividades académicas}
+
+\begin{center}
+\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{L{6.3cm} C{2.4cm} C{1.8cm} C{1.9cm} C{2.2cm}}
+  \toprule
+  \textbf{Estamento} & \textbf{Ponderación} & \textbf{A favor} & \textbf{En contra} & \textbf{Abstención} \\
+  \midrule
+  Delegatura Mechona                & 20\% & 50\%  & 50\%  & 0\% \\
+  Delegatura Plan Común             & 20\% & 0\%   & 100\% & 0\% \\
+  Delegatura Mención Economía       & 20\% & 100\% & 0\%   & 0\% \\
+  Delegatura Mención Administración & 20\% & 0\%   & 100\% & 0\% \\
+  Mesa Directiva                    & 10\% & 0\%   & 100\% & 0\% \\
+  Consejerías de Escuela            & 10\% & 0\%   & 100\% & 0\% \\
+  \midrule
+  \textbf{Resultado ponderado}      & \textbf{100\%} & \textbf{30\%} & \textbf{70\%} & \textbf{0\%} \\
+  \bottomrule
+\end{tabular}
+\end{center}
+
+% ---------------------------------------------------------------------------
+\section{Resolución}
+
+En virtud de los resultados expuestos, el Consejo resuelve:
+
+\begin{enumerate}
+  \item \textbf{Moción 1:} Se \textbf{rechaza} la adhesión a la movilización convocada por la FECh para el día 18 de noviembre, con un 35\% de los votos ponderados a favor y un 65\% en contra.
+  \item \textbf{Moción 2:} Se \textbf{rechaza} la paralización de actividades académicas para el día 18 de noviembre, con un 30\% de los votos ponderados a favor y un 70\% en contra.
+\end{enumerate}
+
+\vspace{0.5em}
+
+Habiéndose computado la totalidad de los votos recibidos, se da por cerrada la votación.
+
+\vspace{2.5em}
+
+\noindent\textbf{Firma:}
+
+\vspace{3em}
+
+\noindent Alan Evan Mc Coll Albuja\\
+Presidente CEIC
+
+\end{document}
